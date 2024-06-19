@@ -1,5 +1,3 @@
-# Web-FlowCity
-
 # Projeto de Práticas Extensionistas
 
 Este repositório contém o código-fonte de uma landing page desenvolvida para destacar as práticas extensionistas do nosso projeto. A landing page tem como objetivo divulgar as atividades, objetivos e resultados do projeto, além de facilitar o engajamento e comunicação com interessados.
