@@ -37,7 +37,7 @@ nav{
     display: flex;
 }
 
-.nav-links{
+.nav-links li{
     margin: 0 10px;
 }
 
