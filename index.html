@@ -11,26 +11,49 @@
 <header>
     <div class="logo">Logotipo</div>
         <nav>
-            <div class="menu-habuguer" id="MenuHabuguer">&#9776;</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+            
+            <button class="button" onclick="sidebar_open()">☰</button>
+            <div class="sidebar" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            </div>
         </nav>
 </header>
 
 <main>
 
-   <div class="carrosel" id="carrosel">
+   <div id="vlightbox1">
 
-    <div class="carrosel-imag" id="imag1"></div>
-    <div class="carrosel-imag" id="imag2"></div>
-    <div class="carrosel-imag" id="imag3"></div>
-    <button class="anterior" onclick="anterImage()">&#10094;</button>
-    <button class="proximo" onclick="proxiImage()">&#10095;</button>
-
+    <div>
+        <div class="numbertext">1 / 4</div>
+        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/1.jpg" title="Foto 1">
+            <imag></imag>
+        </a>
+    </div>
+    
+    <div>
+        <div class="numbertext">2 / 4</div>
+        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/2.jpg" title="Foto 2">
+            <imag></imag>
+        </a>
+    </div>
+    
+    <div>
+        <div class="numbertext">3 / 4</div>
+        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/3.jpg" title="Foto 3">
+            <imag></imag>
+        </a>
+    </div>
+    
+    <div>      
+        <div class="numbertext">4 / 4</div>
+        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/4.jpg" title="Foto 4">
+            <imag></imag>
+        </a>
+    </div>
+   
    </div>
 
    <div class="subsection">
