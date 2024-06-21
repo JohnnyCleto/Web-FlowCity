@@ -26,32 +26,18 @@ nav{
     align-items: center;
 }
 
-.menu-habuguer {
+.sidebar  {
     display: none;
     font-size: 28px;
     cursor: pointer;
 }
 
-.nav-links{
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-links li{
-    margin: 0 10px;
-}
-
-.nav-links a{
-    color: #fff;
-    text-decoration: none;
-}
-
 @media (max-width: 486px) {
-    .menu-habuguer{
+    .sidebar{
         display: block;
     }
 
-    .nav-links{
+    /*a{
         display: none;
         flex-direction: column;
         position: absolute;
@@ -61,113 +47,8 @@ nav{
         border-radius: 5px;
     }
 
-    .nav-links li{
+    a{
         margin: 10px 0;
-    }
+    }*/
 }
 
-.carrosel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    background-color: #eee;
-}
-
-.carrosel-imag {
-    display: none;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 300px;
-    font-size: 24px;
-    background-color: #ccc;
-}
-
-.carrosel-imag.active {
-    display: block;
-}
-
-.anterior, .proximo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.anterior {
-    left: 10px;
-}
-
-.proximo {
-    right: 10px;
-}
-
-.subsection {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.coluna {
-    flex: 1;
-    margin: 0 10px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .subsection {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .coluna {
-        margin: 10px 0;
-    }
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.links-social {
-    margin-bottom: 10px;
-}
-
-.icon {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
-
-.icon img {
-    width: 20px;
-    left: 20px;
-}
-
-.icon::after {
-    content: attr(data-toggle);
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    white-space: nowrap;
-}
-
-.icon:hover::after {
-    opacity: 1;
-}
