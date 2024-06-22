@@ -10,55 +10,62 @@
 
 <header>
     <div class="logo">Logotipo</div>
-        <nav>
-            
-            <button class="button" onclick="sidebar_open()">☰</button>
-            <div class="sidebar" id="mySidebar">
-                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
-            </div>
-        </nav>
+    <nav class="nav">
+        <div class="menu" id="menu">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
-   <div id="vlightbox1">
+    <div class="gallery">
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 1" onclick=""></div>
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 2" onclick=""></div>
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 3" onclick=""></div>
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 4" onclick=""></div>
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 5" onclick=""></div>
+        <div class="fotos"><img src="imagens/fotos/1.jpg" alt="Imagem 6" onclick=""></div>
+    </div>
 
-    <div>
-        <div class="numbertext">1 / 4</div>
-        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/1.jpg" title="Foto 1">
-            <imag></imag>
-        </a>
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="">&times;</span>
+        <div class="contentudo">
+            <div class="slide">
+                <div class="numbertext">1 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <div class="numbertext">2 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <div class="numbertext">3 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <div class="numbertext">4 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 4">
+            </div>
+            <div class="slide">
+                <div class="numbertext">5 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 5">
+            </div>
+            <div class="slide">
+                <div class="numbertext">6 / 6</div>
+                <img src="imagens/fotos/1.jpg" alt="Imagem 6">
+            </div>
+            <a class="prev" onclick="">&#10094;</a>
+            <a class="next" onclick="">&#10095;</a>
+        </div>
     </div>
-    
-    <div>
-        <div class="numbertext">2 / 4</div>
-        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/2.jpg" title="Foto 2">
-            <imag></imag>
-        </a>
-    </div>
-    
-    <div>
-        <div class="numbertext">3 / 4</div>
-        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/3.jpg" title="Foto 3">
-            <imag></imag>
-        </a>
-    </div>
-    
-    <div>      
-        <div class="numbertext">4 / 4</div>
-        <a class="vlightbox1" id="lightbox-responsiva" href="imagens/fotos/4.jpg" title="Foto 4">
-            <imag></imag>
-        </a>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-   </div>
 
    <div class="subsection">
-
+    
     <div class="coluna">
         <h1>Titulo 1</h1>
         <p>Paragrafo 2</p>
@@ -81,14 +88,15 @@
 <footer>
 
     <div class="links-social">
-        <a href="#" class="icon" data-toggle="Instagram"><img src="imagens/instagram.png" alt="Instagram"></a>
-        <a href="#" class="icon" data-toggle="Facebook"><img src="imagens/facebook.png" alt="Facebook"></a>
-    </div>
-    <div class="contato">
-        <p>Email: contato@example.com</p>
-        <p>Telefone: (99) 9999-9999</p>
+        <a href="#" class="icon" data-tooltip="Facebook"><img src="imagens/icon/facebook.png" alt="Facebook"></a>
+        <a href="#" class="icon" data-tooltip="Instagram"><img src="imagens/icon/instagram.png" alt="Instagram"></a>
+        <a href="#" class="icon" data-tooltip="LinkedIn"><img src="imagens/icon/linkedIn.png" alt="LinkedIn"></a>
     </div>
    
+    <div class="contato">
+        <p>Telefone: (99) 9999-9999</p>
+        <p>Email: contato@example.com</p>
+    </div>   
 </footer>
 </body>
 <script src="Js/script.js"></script>
