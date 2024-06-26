@@ -20,7 +20,8 @@ A página é estruturada em três seções principais:
 ## Tecnologias Utilizadas
 
 - HTML5
-- CSS3 (Flexbox e Grid Layout)
+- CSS3
+- Javascript
 
 ## Como Contribuir
 
