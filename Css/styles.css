@@ -1,15 +1,21 @@
-/* Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+* {  /* '* {}' é uma regra especial que seleciona todos os elementos HTML na página. */
+    box-sizing: border-box; /*box-sizing = definir como o tamanho total de um elemento é calculado.
+    border-box = tamanho total do elemento será exatamente o que você definiu, sem que a largura ou
+    a altura sejam alteradas devido ao preenchimento ou borda adicionados.*/
+    margin: 0; /* define a margem de um elemento como zero pixels em todos os lados (topo, direita, fundo e esquerda) */
+    padding: 0; /* define o preenchimento interno de um elemento como zero pixels em todos os lados (topo, direita, fundo e esquerda) */
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;  /* font-family = especifica a família de fontes que será aplicada ao texto dentro de um elemento HTML.
+    arial, sans-serif = o navegador vai utilizar a fonte Arial.
+    Caso a fonte Arial não esteja disponível, o navegador utilizará uma fonte genérica do tipo sans-serif. */
+    background-color: rgb(191, 218, 248); /* definir a cor de fundo de um elemento HTML. */
 }
 
 #container {
@@ -19,13 +25,16 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* definir um contêiner flexível, seus filhos(itens flexíveis)podem ser organizados em diferentes direções e alinhamentos.*/
+    justify-content: space-between; /* usado dentro de um contêiner flexível para distribuir os itens ao longo do eixo principal
+    com espaços iguais entre eles. O primeiro item é alinhado ao início do contêiner, o último item ao final e os itens restantes
+    são distribuídos uniformemente no espaço disponível entre eles.*/
+    /* align-items: center; alinha os itens verticalmente no centro. */
+    padding: 30px; /* padding = preenchimento. criar espaço ao redor do conteúdo dentro de um elemento, dentro de suas bordas. */
+    background-color: #de6705;
+    color: white; /* definir a cor do texto dentro de um elemento HTML. */
 }
+
 
 .logo {
     font-size: 1.5rem;
@@ -140,40 +149,40 @@ header {
 }
 
 .accordion {
-    margin-bottom: 2rem;
+    margin-top: 20px;
 }
 
 .accordion-button {
-    background: #333;
-    color: #fff;
+    background-color: #de6705;
+    color: white;
     cursor: pointer;
-    padding: 1rem;
+    padding: 10px;
+    width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    width: 100%;
-    font-size: 1.2rem;
-    transition: 0.4s;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
 }
 
 .accordion-button:hover {
-    background: #555;
+    background-color: #c55a05;
 }
 
 .accordion-content {
-    background: #f4f4f4;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    padding: 0 1rem;
+    padding-left: 18px;
 }
 
 .accordion-content p {
-    padding: 1rem 0;
+    padding: 10px 0;
 }
 
-#rodape {
-    background-color: #333;
+footer {
+    background-color: #de6705;
     color: white;
     padding: 20px;
     text-align: center;
@@ -243,4 +252,16 @@ header {
 .local img {
     width: 300px;
     height: 300px;
+}
+
+.eventos, .local p, h2 {
+    text-align: center; 
+}
+
+.eventos, .local h2 {
+    text-align: center; 
+}
+.evento img, .local img {
+    display: block; 
+    margin: 0 auto; 
 }
