@@ -26,7 +26,7 @@ header {
     align-items: center;
 }
 
-.menu {
+.menu-icon {
     display: none;
     font-size: 28px;
     cursor: pointer;
@@ -46,6 +46,33 @@ header {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
 footer {
     background-color: #333;
     color: white;
@@ -57,19 +84,19 @@ footer {
     margin-bottom: 10px;
 }
 
-.social-icon {
+.icon {
     margin: 0 10px;
     color: white;
     text-decoration: none;
     position: relative;
 }
 
-img{
+a img{
     width: 20px;
     left: 20px;
 }
 
-.social-icon::after {
+.icon::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 25px;
@@ -84,6 +111,6 @@ img{
     white-space: nowrap;
 }
 
-.social-icon:hover::after {
+.icon:hover::after {
     opacity: 1;
 }
