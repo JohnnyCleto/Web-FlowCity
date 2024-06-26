@@ -8,6 +8,7 @@ Este repositório contém o código-fonte de uma landing page desenvolvida para 
 - **styles.css**: O arquivo CSS que contém os estilos para a página.
 - **imagens/**: Pasta contendo imagens utilizadas na landing page.
 - **README.md**: Este arquivo que fornece informações sobre o projeto e seu repositório.
+- **Javascript**: O arquivo Javascript que contém os codigos para a página.
 
 ## Estrutura da Página
 
@@ -20,7 +21,8 @@ A página é estruturada em três seções principais:
 ## Tecnologias Utilizadas
 
 - HTML5
-- CSS3 (Flexbox e Grid Layout)
+- CSS3
+- Javascript
 
 ## Como Contribuir
 
