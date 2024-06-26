@@ -1,3 +1,4 @@
+/* Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -208,4 +209,12 @@ header {
     .nav-links.show {
         display: flex;
     }
+}
+.evento img {
+    width: 300px;
+    height: 300px;
+}
+.local img {
+    width: 300px;
+    height: 300px;
 }
